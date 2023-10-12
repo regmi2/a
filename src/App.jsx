@@ -1,37 +1,52 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import {Link, Outlet} from 'react-router-dom';
+import Navbar from './components/Navbar'
+import Themes from './components/Themes/Themes'
+import Home from './pages/Home/Home'
+import Contact from './pages/Contact/Contact'
+import About from './pages/About/About'
+import Portfolio from './pages/Portfolio/Portfolio'
+
 
 function App() {
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
 
-      <nav>
-        <Link to="/a/">Home</Link>
-        {" | "}
-        <Link to="/a/contact">Contact</Link>
-      </nav>
+    <BrowserRouter>
+    <Navbar />
+    <Themes/>
+    <Routes>
+      <Route path='/a/' element={<Home/>} />
+   <Route path='/a/about' element={<About/>} /> 
+      <Route path='/a/portfolio' element={<Portfolio/>} /> 
+      <Route path='/a/contact' element={<Contact/>} />
+       
+     
+    
+    </Routes>
+    </BrowserRouter>
 
-      <Outlet />
-
-
-
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
   )
 }
 
 export default App
+
+
+
+// import './App.css'
+// import Navbar from './components/Navbar';
+// import Themes from './components/Themes/Themes'
+
+// function App() {
+
+//   return (
+//     <>
+
+//       <Navbar />
+//       <Themes />
+
+//     </>
+//   )
+// }
+
+// export default App
