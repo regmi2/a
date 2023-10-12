@@ -1,31 +1,112 @@
 import React, { useState } from 'react'
-
+import PallavLake from "../../assets/pallav_lake.jpg"
 // import ResumeItem from './ResumeItem'
 // import {resume} from '../../data'
 
 import './About.css'
 import { FaReact, FaNode, FaRust } from 'react-icons/fa'; 
-import { IconContext } from 'react-icons/lib'
+import {SiAdobepremierepro, SiPython,
+  SiAdobephotoshop, SiAdobeillustrator, SiReact,SiAdobelightroom,
+  SiAdobeaftereffects, SiAdobeaudition, SiHtml5,SiCss3,SiJavascript,
+  SiAdobeindesign, SiAdobecreativecloud, SiCanva} from 'react-icons/si'
+import {TbBrandVscode} from 'react-icons/tb'
+
+
+  import { IconContext } from 'react-icons/lib'
 
 export const skills = [
   {
     id: 1,
-    name: 'ReactJS', 
-    icon: <FaReact className='skill__icon' />,
-    tags:['Framework', 'Highlighted', ],
+    name: 'Photoshop', 
+    icon: <SiAdobephotoshop id='skill_icon' />,
+    tags:['Highlighted', 'Graphic Design', 'Photo/Video',],
   },
   {
     id: 2,
-    name: 'NodeJS',
-    icon: <FaNode className='skill__icon' />,
-    tags:['Runtime Environment', 'Highlighted', ],
+    name: 'Illustrator',
+    icon: <SiAdobeillustrator id='skill_icon' />,
+    tags:['Graphic Design', 'Highlighted' ],
   },
   {
     id: 3,
-    name: 'Rust',
-    icon: <FaRust className='skill__icon' />,
-    tags:['Language', ],
+    name: 'Premiere Pro',
+    icon: <SiAdobepremierepro id='skill_icon' />,
+    tags:[ 'Highlighted', 'Photo/Video'],
   },
+  {
+    id: 4,
+    name: 'After Effects',
+    icon: <SiAdobeaftereffects id='skill_icon' />,
+    tags:['Photo/Video'],
+  },
+  {
+    id: 5,
+    name: 'Audition',
+    icon: <SiAdobeaudition id='skill_icon' />,
+    tags:['Photo/Video' ],
+  },
+  {
+    id: 6,
+    name: 'InDesign',
+    icon: <SiAdobeindesign id='skill_icon' />,
+    tags:['Graphic Design', 'Highlighted'],
+  },
+  {
+    id: 7,
+    name: 'Adobe Creative Suite',
+    icon: <SiAdobecreativecloud id='skill_icon' />,
+    tags:['Highlighted', 'Graphic Design','Photo/Video'],
+  },
+  {
+    id: 8,
+    name:'Canva',
+    icon: <SiCanva id="skill_icon" />,
+    tags:['Graphic Design']
+  },
+  {
+    id: 9,
+    name:'VSCode',
+    icon: <TbBrandVscode id="skill_icon" />,
+    tags:['Code']
+  },
+  {
+    id: 10,
+    name:'HTML',
+    icon: <SiHtml5 id="skill_icon" />,
+    tags:['Code', 'Highlighted']
+  },
+  {
+    id: 11,
+    name:'CSS',
+    icon: <SiCss3 id="skill_icon" />,
+    tags:['Code', 'Highlighted']
+  },
+  {
+    id: 12,
+    name:'JavaScript',
+    icon: <SiJavascript id="skill_icon" />,
+    tags:['Code', 'Highlighted']
+  },
+  {
+    id: 13,
+    name:'React',
+    icon:<SiReact id='skill_icon'/>,
+    tags:['Code']
+  } , 
+  {
+    id: 14,
+    name:'Lightroom',
+    icon:<SiAdobelightroom id='skill_icon'/>,
+    tags:['Graphic Design', 'Photo/Video',],
+  },
+  {
+    id:15,
+    name:'Python',
+    icon: <SiPython id='skill_icon'/>,
+    tags:['Code','Highlighted']
+  }
+
+
 
 ];
 
@@ -49,6 +130,7 @@ const About = () => {
       <section className="about">
       <h2 className="section__title">
         About <span>Me</span>
+        
       </h2>
 
         <div className="about__container grid">
@@ -65,20 +147,22 @@ const About = () => {
                 My Goals
                 Outside Of Work  */}
 
-                What I Do: I engineer full stack software applications
-                with a strong focus on accessibility and explicit value.
-                In the front end, I thrive in crafting interactive and 
-                visually appealing user interfaces.
-                Combined with an optimized, resourceful, & secure back end, I weave together 
-                full stack applications that provide a seamless experience for users and
-                stakeholders.
+                I am passionate about crafting and delivering 
+                compelling and accessible narratives.
+                All of our perspectives are shaped by a tapestry 
+                of stories. When a compelling narrative meets us 
+                our perspectives, paradigms shift.
+                What I do is collaborate with my fellow humans to access
+                and leverage narratives that empower them and their people.
+                
                 <br/>
                 <br/>
             </p>
             </div>
+
         
             <div className="about__images">
-              Image Here
+                <img src={PallavLake} alt="pallav by the lake" className='about__img' />
 
             </div>
 
@@ -93,28 +177,39 @@ const About = () => {
 
       <section className='skills__section'>
       <h3 className="section__subtitle">My Skills/Tools</h3>
+ 
       
       {/* Tag filtering buttons */}
       <div className="tags">
-        <button onClick={() => setSelectedTag('All')}>All</button>
+        <p onClick={() => setSelectedTag('All')}>All</p>
         {uniqueTags.map(tag => (
-          <button key={tag} onClick={() => setSelectedTag(tag)}>
+          <p key={tag} id='tag-button' onClick={() => setSelectedTag(tag)}>
             {tag}
-          </button>
+          </p>
         ))}
       </div>
 
       {/* Display the filtered skills */}
+
       <div className="skills">
+  {filteredSkills.map(({ name, icon }, index) => (
+    <div key={index} className="skill">
+      <div className='skill__icon_container'>
+        {React.cloneElement(icon, { style: { width: '50px', height: '50px', color: 'var(--first-color)', filter: 'grayscale(15%)'} })}
+      </div>
+      <p>{name}</p>
+    </div>
+  ))}
+</div>
+
+
+      {/* <div className="skills">
         {filteredSkills.map(({name,icon},index) => (
           
           <div key={index} className="skill">
-            <div className='skill__icon' >
+            <div className='skill__icon_container' >
             {icon}
               </div>
-     
-
-            
             <p>{name}</p>
           </div>
         ))}
@@ -122,12 +217,8 @@ const About = () => {
 
 
 
-      </div>
+      </div> */}
           
-
-
-        
-
       </section>
         <div className="separator"> </div>
 

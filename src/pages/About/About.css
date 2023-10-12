@@ -1,7 +1,7 @@
 .about__container, .resume__container{
   grid-template-columns: repeat(2,1fr);
   align-items: flex-start;
-  
+
 }
 
 .separator {
@@ -10,6 +10,28 @@
   margin: 72px auto 56px;
 }
 
+.about__paragraph{
+  font-size: 18px;
+  line-height: 200%;
+}
+
+.about__img{
+   width: 100%; 
+   border-radius: 50px;
+   transition: 1s;
+}
+
+.about__img:hover{
+  transition: 1s;
+  border: 3px solid var(--first-color);
+  scale: 1.05;
+}
+
+.section__subtitle{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
 
 
 .resume__item{
@@ -89,20 +111,42 @@
 /* Tags */
 .tags {
   font-size: 20px;
+  font-family: var(--body-font);
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
 }
 
-.tags button {
+.tags p {
   margin-right: 10px;
+  cursor: pointer;
   margin-bottom: 10px;
+  font-size: 16px; /* Increase font size to 20px */
+  border: 2px solid var(--text-color);
+  padding: 20px;
+  border-radius: 15px;
+  color: var(--text-color); /* Default color for non-selected tags */
+  transition: color 0.5s; /* Transition for color change on hover */
+  width: 200px;
+  text-align: center;
 }
 
+.tags p.selected {
+  color: var(--text-white); /* Default color for non-selected tags */
+  transition: color 0.5s; /* Transition for color change on hover */
+}
+
+.tags p:hover:not(.selected) {
+  background-color: var(--first-color);
+  color: var(--text-white); /* Color for non-selected tags on hover */
+  
+}
 /* Icons */
 .skills {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .skill {
@@ -121,18 +165,15 @@
 .skill p {
   font-size: 16px;
   margin: 0;
+  margin-bottom: 40px;
 }
 
 
 /* Add this CSS to your stylesheet */
 .skill__icon {
-  font-size: 5em; /* Enlarge the icons to 30px in height */
-  size: 50em;
-  color: blue; /* Set the icon color to black */
+  font-size: 5em;
+  color: var(--first-color); /* Set the icon color to black */
   transition: transform 0.2s ease, color 0.2s ease; /* Add a smooth transition effect */
 }
 
-.skill__icon:hover {
-  transform: scale(1.1); /* Grow the icon slightly on hover */
-  color: var(--first-color); /* Change the icon color to purple on hover */
-}
+

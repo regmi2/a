@@ -19,7 +19,7 @@ const Home = () => {
           sequence={[
             'Collaborative', 2000,
             'Solution Oriented',2000,
-            'Resolute', 2000
+            'Proactive', 2000
           ]} 
           speed={50}
           className='titles'
@@ -31,21 +31,21 @@ const Home = () => {
           </h1>
 
           <p className="home__description">
-            I am a FullStack Engineer with 6+ years of programming experience. 
-            I earned my Computer Science degree from UW-Madison. 
-            I'm passionate about bridging accessibility gaps to self-empowerment
-             through tech and art  🎨 👨🏾‍💻  
+          I'm a Multimedia Specialist with 6+ years of experience 
+          crafting impactful narratives through audio, video, and visual content production. 
+           I'm passionate about working with my collaborators to deliver 
+           value that resonate with their audiences. 
          </p>
 
         <div className='home__buttons'>
-          <Link to='/about' className='button' id='more-about-me'>
+          <Link to='/a/about' className='button' id='more-about-me'>
             More About Me {' '}
             <span className="button__icon">
               <FaArrowRight />
             </span>
           </Link>
 
-          <Link to='/portfolio' className='button' id='portfolio'
+          <Link to='/a/portfolio' className='button' id='portfolio'
          >
             My Portfolio {' '}
             <span className="button__icon">
