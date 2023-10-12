@@ -21,7 +21,15 @@ import {
   import madhos from './assets/PortfolioPics/madhos.jpeg'
   import R2R from './assets/PortfolioPics/Brochure_R2R.png'
   import R2RPDF from './assets/R2R_Brochure.pdf'
-  
+  import Brand from './assets/brand.png'
+  import MilwaukeeFC from './assets/milfc.jpg'
+  import Skyline from './assets/PIML.png'
+  import Magnolia from './assets/magnolia.jpg'
+  import Nil from './assets/Nilgiri.png'
+
+
+
+
 import Theme1 from './assets/ThemeColors/purple.png';
 import Theme2 from './assets/ThemeColors/red.png';
 import Theme3 from './assets/ThemeColors/blueviolet.png';
@@ -259,6 +267,162 @@ import Theme10 from './assets/ThemeColors/yellow.png';
 //   ];
   
   export const portfolio = [
+
+    {
+      id: 10,
+      img: Brand,
+      title: 'Family Logo',
+      description: 'Regmi Family Logo. The character to the right is pronounced "rey" and the mountain signifies our homeland of Nepal.',
+      details: [
+        {
+          icon: <FiUser />,
+          title: 'Client: ',
+          desc: 'Personal Project',
+        },
+        {
+          icon: <CgMediaLive />,
+          title: 'Medium: ',
+          desc: 'Graphic Design',
+        },
+        {
+          icon: <FaCode />,
+          title: 'Softwares/Hardware: ',
+          desc: 'Illustrator, Photoshop',
+        },
+      ]
+    },
+    {
+      id: 22,
+      img: Magnolia,
+      title: 'Magnolia',
+      description: 'A photo of a magnolia flower during a lovely Madison summer day',
+      details: [
+        {
+          icon: <FiUser />,
+          title: 'Client: ',
+          desc: 'Personal Project',
+        },
+        {
+          icon: <CgMediaLive />,
+          title: 'Medium: ',
+          desc: 'Photography',
+        },
+        {
+          icon: <FaCode />,
+          title: 'Softwares: ',
+          desc: 'Adobe Photoshop',
+        },
+      ]
+      
+
+    },
+   
+
+
+
+
+    {
+      id: 6,
+      img: Work6,
+      title: 'Happy Buddha',
+      description: 'One of many photos I took at a friend\'s home while visiting Nepal.',
+      details: [
+        {
+          icon: <FiUser />,
+          title: 'Client: ',
+          desc: 'Personal Project',
+        },
+        {
+          icon: <CgMediaLive />,
+          title: 'Medium: ',
+          desc: 'Camera Photography',
+        },
+        {
+          icon: <FaCode />,
+          title: 'Softwares/Hardware: ',
+          desc: 'Photoshop, Canon EOS Rebel T7 ',
+        },
+      ]
+    },
+    
+    
+    {
+      id: 20,
+      img: MilwaukeeFC,
+      title: 'Milwaukee FC Logo',
+      description: 'Designed and developed for the Nepali Milwaukee Football (Soccer) Club. The colors represent both the US and Nepali flag.',
+      details: [
+        {
+          icon: <FiUser />,
+          title: 'Client: ',
+          desc: 'Milwaukee Nepali Football Club',
+        },
+        {
+          icon: <CgMediaLive />,
+          title: 'Medium: ',
+          desc: 'Print & Web Graphic Design',
+        },
+        {
+          icon: <FaCode />,
+          title: 'Softwares: ',
+          desc: 'Adobe Photoshop, Illustrator',
+        },
+      ]
+      
+
+    },
+    {
+      id: 25,
+      img: Nil,
+      title: 'Direction',
+      description:'Waves wash away the surface and reveal the \'rey\' hidden inside',
+      details: [
+        {
+          icon: <FiUser />,
+          title: 'Client: ',
+          desc: 'Personal',
+        },
+        {
+          icon: <CgMediaLive />,
+          title: 'Medium: ',
+          desc: 'Graphic Design',
+        },
+        {
+          icon: <FaCode />,
+          title: 'Softwares: ',
+          desc: 'Adobe Photoshop, Illustrator',
+        },
+      ]
+      
+
+    },
+    {
+      id: 21,
+      img: Skyline,
+      title: 'Skyline Edit',
+      description: 'Skyline edit combining places I fell in love with - Madison, Kathmandu, and Seattle',
+      details: [
+        {
+          icon: <FiUser />,
+          title: 'Client: ',
+          desc: 'Personal Project',
+        },
+        {
+          icon: <CgMediaLive />,
+          title: 'Medium: ',
+          desc: 'Graphic Design',
+        },
+        {
+          icon: <FaCode />,
+          title: 'Softwares: ',
+          desc: 'Adobe Photoshop',
+        },
+      ]
+      
+
+    },
+
+
     {
       id: 7,
       img: WIEA,
@@ -290,37 +454,7 @@ import Theme10 from './assets/ThemeColors/yellow.png';
       
 
     },
-    {
-      id: 8,
-      img: madhos,
-      title: 'Madhos Bane Music Video',
-      description: 'Collaborated with editors and colorists from Nepal to enhance music video. Filmed and edited social media posts for the artist.',
-      details: [
-        {
-          icon: <FiUser />,
-          title: 'Client: ',
-          desc: 'Lekh Kafle Music',
-        },
-        {
-          icon: <CgMediaLive />,
-          title: 'Medium: ',
-          desc: 'Video, Social Media',
-        },
-        {
-          icon: <FaCode />,
-          title: 'Softwares: ',
-          desc: 'Adobe Premiere Pro, After Effects, Illustrator',
-        },
-        {
-          icon: <FiExternalLink />,
-          title: 'Link: ',
-          desc: 'Click Here',
-          link: 'https://www.youtube.com/watch?v=7QqISnu8Kow&ab_channel=LekhKafle'
-        },
-      ]
-      
-
-    },
+    
     {
       id: 9,
       img: R2R,
@@ -352,169 +486,177 @@ import Theme10 from './assets/ThemeColors/yellow.png';
       
 
     },
+    
+    
     {
-      id: 1,
-      img: Work1,
-      title: 'Photo Editing',
+      id: 8,
+      img: madhos,
+      title: 'Madhos Bane Music Video',
+      description: 'Collaborated with editors and colorists from Nepal to enhance music video. Filmed and edited social media posts for the artist.',
       details: [
         {
-          icon: <FiFileText />,
-          title: 'Project : ',
-          desc: 'Photo',
+          icon: <FiUser />,
+          title: 'Client: ',
+          desc: 'Lekh Kafle Music',
         },
         {
-          icon: <FiUser />,
-          title: 'Client : ',
-          desc: 'Dribble',
+          icon: <CgMediaLive />,
+          title: 'Medium: ',
+          desc: 'Video, Social Media',
         },
         {
           icon: <FaCode />,
-          title: 'Language : ',
-          desc: 'Adobe Photoshop',
+          title: 'Softwares: ',
+          desc: 'Adobe Premiere Pro, After Effects, Illustrator',
         },
         {
           icon: <FiExternalLink />,
-          title: 'Preview : ',
-          desc: 'www.dribble.com',
+          title: 'Link: ',
+          desc: 'Click Here',
+          link: 'https://www.youtube.com/watch?v=7QqISnu8Kow&ab_channel=LekhKafle'
         },
-      ],
+      ]
+      
+
     },
   
-    {
-      id: 2,
-      img: Work2,
-      title: 'Website Design',
-      details: [
-        {
-          icon: <FiFileText />,
-          title: 'Project : ',
-          desc: 'Website',
-        },
-        {
-          icon: <FiUser />,
-          title: 'Client : ',
-          desc: 'Dribble',
-        },
-        {
-          icon: <FaCode />,
-          title: 'Language : ',
-          desc: 'React JS',
-        },
-        {
-          icon: <FiExternalLink />,
-          title: 'Preview : ',
-          desc: 'www.dribble.com',
-        },
-      ],
-    },
+    // {
+    //   id: 1,
+    //   img: Work1,
+    //   title: 'Photo Editing',
+    //   details: [
+    //     {
+    //       icon: <FiFileText />,
+    //       title: 'Project : ',
+    //       desc: 'Photo',
+    //     },
+    //     {
+    //       icon: <FiUser />,
+    //       title: 'Client : ',
+    //       desc: 'Dribble',
+    //     },
+    //     {
+    //       icon: <FaCode />,
+    //       title: 'Language : ',
+    //       desc: 'Adobe Photoshop',
+    //     },
+    //     {
+    //       icon: <FiExternalLink />,
+    //       title: 'Preview : ',
+    //       desc: 'www.dribble.com',
+    //     },
+    //   ],
+    // },
   
-    {
-      id: 3,
-      img: Work3,
-      title: 'Video Editing',
-      details: [
-        {
-          icon: <FiFileText />,
-          title: 'Project : ',
-          desc: 'Video',
-        },
-        {
-          icon: <FiUser />,
-          title: 'Client : ',
-          desc: 'Dribble',
-        },
-        {
-          icon: <FaCode />,
-          title: 'Language : ',
-          desc: 'Adobe Premium',
-        },
-        {
-          icon: <FiExternalLink />,
-          title: 'Preview : ',
-          desc: 'www.dribble.com',
-        },
-      ],
-    },
+    // {
+    //   id: 2,
+    //   img: Work2,
+    //   title: 'Website Design',
+    //   details: [
+    //     {
+    //       icon: <FiFileText />,
+    //       title: 'Project : ',
+    //       desc: 'Website',
+    //     },
+    //     {
+    //       icon: <FiUser />,
+    //       title: 'Client : ',
+    //       desc: 'Dribble',
+    //     },
+    //     {
+    //       icon: <FaCode />,
+    //       title: 'Language : ',
+    //       desc: 'React JS',
+    //     },
+    //     {
+    //       icon: <FiExternalLink />,
+    //       title: 'Preview : ',
+    //       desc: 'www.dribble.com',
+    //     },
+    //   ],
+    // },
   
-    {
-      id: 4,
-      img: Work4,
-      title: 'Video Editing',
-      details: [
-        {
-          icon: <FiFileText />,
-          title: 'Project : ',
-          desc: 'Video',
-        },
-        {
-          icon: <FiUser />,
-          title: 'Client : ',
-          desc: 'Dribble',
-        },
-        {
-          icon: <FaCode />,
-          title: 'Language : ',
-          desc: 'Adobe Premium',
-        },
-        {
-          icon: <FiExternalLink />,
-          title: 'Preview : ',
-          desc: 'www.dribble.com',
-        },
-      ],
-    },
+    // {
+    //   id: 3,
+    //   img: Work3,
+    //   title: 'Video Editing',
+    //   details: [
+    //     {
+    //       icon: <FiFileText />,
+    //       title: 'Project : ',
+    //       desc: 'Video',
+    //     },
+    //     {
+    //       icon: <FiUser />,
+    //       title: 'Client : ',
+    //       desc: 'Dribble',
+    //     },
+    //     {
+    //       icon: <FaCode />,
+    //       title: 'Language : ',
+    //       desc: 'Adobe Premium',
+    //     },
+    //     {
+    //       icon: <FiExternalLink />,
+    //       title: 'Preview : ',
+    //       desc: 'www.dribble.com',
+    //     },
+    //   ],
+    // },
   
-    {
-      id: 5,
-      img: Work5,
-      title: 'Landing Page',
-      details: [
-        {
-          title: 'Project : ',
-          desc: 'Website',
-        },
-        {
-          title: 'Client : ',
-          desc: 'Dribble',
-        },
-        {
-          title: 'Language : ',
-          desc: 'React JS, Node JS',
-        },
-        {
-          title: 'Preview : ',
-          desc: 'www.dribble.com',
-        },
-      ],
-    },
+    // {
+    //   id: 4,
+    //   img: Work4,
+    //   title: 'Video Editing',
+    //   details: [
+    //     {
+    //       icon: <FiFileText />,
+    //       title: 'Project : ',
+    //       desc: 'Video',
+    //     },
+    //     {
+    //       icon: <FiUser />,
+    //       title: 'Client : ',
+    //       desc: 'Dribble',
+    //     },
+    //     {
+    //       icon: <FaCode />,
+    //       title: 'Language : ',
+    //       desc: 'Adobe Premium',
+    //     },
+    //     {
+    //       icon: <FiExternalLink />,
+    //       title: 'Preview : ',
+    //       desc: 'www.dribble.com',
+    //     },
+    //   ],
+    // },
   
-    {
-      id: 6,
-      img: Work6,
-      title: 'Photo Editing',
-      details: [
-        {
-          icon: <FiFileText />,
-          title: 'Project : ',
-          desc: 'Photo',
-        },
-        {
-          icon: <FiUser />,
-          title: 'Client : ',
-          desc: 'Dribble',
-        },
-        {
-          icon: <FaCode />,
-          title: 'Language : ',
-          desc: 'Adobe Photoshop',
-        },
-        {
-          icon: <FiExternalLink />,
-          title: 'Preview : ',
-          desc: 'www.dibble.com',
-        },
-      ],
-    },
+    // {
+    //   id: 5,
+    //   img: Work5,
+    //   title: 'Landing Page',
+    //   details: [
+    //     {
+    //       title: 'Project : ',
+    //       desc: 'Website',
+    //     },
+    //     {
+    //       title: 'Client : ',
+    //       desc: 'Dribble',
+    //     },
+    //     {
+    //       title: 'Language : ',
+    //       desc: 'React JS, Node JS',
+    //     },
+    //     {
+    //       title: 'Preview : ',
+    //       desc: 'www.dribble.com',
+    //     },
+    //   ],
+    // },
+  
+
   ];
   
   export const themes = [
