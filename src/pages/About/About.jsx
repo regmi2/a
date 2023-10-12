@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 // import ResumeItem from './ResumeItem'
 // import {resume} from '../../data'
 
-import './about.css'
+import './About.css'
 import { FaReact, FaNode, FaRust } from 'react-icons/fa'; 
 import { IconContext } from 'react-icons/lib'
 

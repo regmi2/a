@@ -1,6 +1,7 @@
 .about__container, .resume__container{
   grid-template-columns: repeat(2,1fr);
   align-items: flex-start;
+  
 }
 
 .separator {
