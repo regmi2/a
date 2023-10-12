@@ -8,6 +8,7 @@ import {
     FaCode,
   } from 'react-icons/fa';
   import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
+  import {CgMediaLive} from 'react-icons/cg'
   
   import Work1 from './assets/PortfolioPics/project-1.jpeg';
   import Work2 from './assets/PortfolioPics/project-2.jpg';
@@ -15,6 +16,7 @@ import {
   import Work4 from './assets/PortfolioPics/project-4.jpeg';
   import Work5 from './assets/PortfolioPics/project-5.jpg';
   import Work6 from './assets/PortfolioPics/project-6.jpg';
+  import WIEA from './assets/PortfolioPics/WIEA.png'
   
 import Theme1 from './assets/ThemeColors/purple.png';
 import Theme2 from './assets/ThemeColors/red.png';
@@ -253,6 +255,35 @@ import Theme10 from './assets/ThemeColors/yellow.png';
 //   ];
   
   export const portfolio = [
+    {
+      id: 7,
+      img: WIEA,
+      title: 'WIEA Conference Booklet',
+      details: [
+        {
+          icon: <CgMediaLive />,
+          title: 'Medium: ',
+          desc: 'Print & Web',
+        },
+        {
+          icon: <FiUser />,
+          title: 'Client: ',
+          desc: 'Wisconsin Indian Education Association (WIEA)',
+        },
+        {
+          icon: <FaCode />,
+          title: 'Softwares: ',
+          desc: 'Adobe Photoshop, InDesign, Illustrator',
+        },
+        {
+          icon: <FiExternalLink />,
+          title: 'Link: ',
+          desc: 'Click Here',
+        },
+      ]
+      
+
+    },
     {
       id: 1,
       img: Work1,
