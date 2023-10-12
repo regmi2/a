@@ -1,8 +1,8 @@
 import React from 'react'
-import Close from '../../assets/close.svg'
+import {IoIosClose} from 'react-icons/io'
 import { useState } from 'react'
 
-const PortfolioItem = ({img, title, details}) => {
+const PortfolioItem = ({img, title, details, description}) => {
     const [modal, setModal] = useState(false)
 
     const toggleModal = () => {
@@ -18,27 +18,40 @@ const PortfolioItem = ({img, title, details}) => {
         {modal && (
                     <div className="portfolio__modal">
                     <div className="portfolio__modal-content">
-                        <img src={Close} alt="" className="modal__close" onClick={toggleModal}/>
+                     
+                        <IoIosClose className='modal__close' onClick={toggleModal}/>
                         <h3 className="modal__title">{title}</h3>
-                        <ul className="modal__list grid">
-                            {details.map(({icon, title, desc}, index) => {
-                                return(
-                                    <li className="modal__item" key={index}>
-                                        <span className="item__icon">{icon}</span>
-        
-        
-                                        <div>
-                                            <span className="item__title">{title}</span>
-                                            <span className="item__details">{desc}</span>
-                                        </div>
-                                    </li>
-                                )
-                            })
-                        }
-                        
-                        </ul>
-                        <img src={img} alt="" className="modal__img" />
-        
+                       
+                       
+
+<img src={img} alt="" className="modal__img" />
+                        <p className='modal__description'>{description}</p>
+                        <ul className="modal__list">
+  {details.map(({ icon, title, desc, link }, index) => {
+    return (
+      <li className="modal__item" key={index}>
+        <div id='icon'>
+        {icon}
+        </div>
+        <div className='item__title'>
+        {title}
+        </div>
+
+        <div>
+          {title === 'Link: ' ? (
+            <span className="item__details">
+              <a href={link} target='_blank' id='detail_link' >{desc}</a>
+            </span>
+          ) : (
+            <span className="item__details">{desc}</span>
+          )}
+        </div>
+      </li>
+    );
+  })}
+</ul>
+
+
                     </div>
                 </div>
         )}

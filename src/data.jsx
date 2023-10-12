@@ -6,6 +6,7 @@ import {
     FaBriefcase,
     FaGraduationCap,
     FaCode,
+    FaRegWindowClose
   } from 'react-icons/fa';
   import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
   import {CgMediaLive} from 'react-icons/cg'
@@ -17,6 +18,9 @@ import {
   import Work5 from './assets/PortfolioPics/project-5.jpg';
   import Work6 from './assets/PortfolioPics/project-6.jpg';
   import WIEA from './assets/PortfolioPics/WIEA.png'
+  import madhos from './assets/PortfolioPics/madhos.jpeg'
+  import R2R from './assets/PortfolioPics/Brochure_R2R.png'
+  import R2RPDF from './assets/R2R_Brochure.pdf'
   
 import Theme1 from './assets/ThemeColors/purple.png';
 import Theme2 from './assets/ThemeColors/red.png';
@@ -259,16 +263,17 @@ import Theme10 from './assets/ThemeColors/yellow.png';
       id: 7,
       img: WIEA,
       title: 'WIEA Conference Booklet',
+      description: 'Designed and Developed for the 2023 WIEA Annual Conference Booklet. Clickable links in web booklet for easy navigation.',
       details: [
-        {
-          icon: <CgMediaLive />,
-          title: 'Medium: ',
-          desc: 'Print & Web',
-        },
         {
           icon: <FiUser />,
           title: 'Client: ',
           desc: 'Wisconsin Indian Education Association (WIEA)',
+        },
+        {
+          icon: <CgMediaLive />,
+          title: 'Medium: ',
+          desc: 'Print & Web Graphic Design',
         },
         {
           icon: <FaCode />,
@@ -279,6 +284,69 @@ import Theme10 from './assets/ThemeColors/yellow.png';
           icon: <FiExternalLink />,
           title: 'Link: ',
           desc: 'Click Here',
+          link: 'https://static1.squarespace.com/static/620fdee24e443d4632442918/t/64409865508bd86d899cfac7/1681954936246/WIEA2023_Interactive+%283%29.pdf'
+        },
+      ]
+      
+
+    },
+    {
+      id: 8,
+      img: madhos,
+      title: 'Madhos Bane Music Video',
+      description: 'Collaborated with editors and colorists from Nepal to enhance music video. Filmed and edited social media posts for the artist.',
+      details: [
+        {
+          icon: <FiUser />,
+          title: 'Client: ',
+          desc: 'Lekh Kafle Music',
+        },
+        {
+          icon: <CgMediaLive />,
+          title: 'Medium: ',
+          desc: 'Video, Social Media',
+        },
+        {
+          icon: <FaCode />,
+          title: 'Softwares: ',
+          desc: 'Adobe Premiere Pro, After Effects, Illustrator',
+        },
+        {
+          icon: <FiExternalLink />,
+          title: 'Link: ',
+          desc: 'Click Here',
+          link: 'https://www.youtube.com/watch?v=7QqISnu8Kow&ab_channel=LekhKafle'
+        },
+      ]
+      
+
+    },
+    {
+      id: 9,
+      img: R2R,
+      title: 'R2R Brochure',
+      description: 'Designed and Developed an informational brochure using brand kit to reference typography and logo to reference colors. Collaborated with stakeholders through Canva',
+      details: [
+        {
+          icon: <FiUser />,
+          title: 'Client: ',
+          desc: 'Root 2 Rise',
+        },
+        {
+          icon: <CgMediaLive />,
+          title: 'Medium: ',
+          desc: 'Print & Web Graphic Design',
+        },
+        {
+          icon: <FaCode />,
+          title: 'Softwares: ',
+          desc: 'Adobe Photoshop, Illustrator, Canva',
+        },
+        {
+          icon: <FiExternalLink />,
+          title: 'Link: ',
+          desc: 'Click Here',
+          link: R2RPDF,
         },
       ]
       
