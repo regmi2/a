@@ -8,7 +8,8 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 
 
-const getStorageColor = () => {
+
+export const getStorageColor = () => {
     let color= 'hsl(252,35%,51%)'
     if(localStorage.getItem('color')) {
         color = localStorage.getItem('color')
@@ -24,15 +25,17 @@ const getStorageTheme = () => {
     return theme
 }
 
-const Themes = () => {
+const Themes = ({ onColorChange }) => {
 
     const [showSwitcher, setShowSwitcher] = useState(false)
     const [color, setColor] = useState(getStorageColor())
     const [theme, setTheme] = useState(getStorageTheme())
 
 
-    const changeColor = (color) => {
-        setColor(color)
+    const updateColor = (newColor) => {
+        setColor(newColor)
+        localStorage.setItem('color', newColor)
+        onColorChange(newColor)
     }
 
     const toggleTheme = () => {
@@ -50,6 +53,9 @@ const Themes = () => {
         localStorage.setItem('theme', theme)
     }, [theme])
 
+    console.log('Color:', color);
+    console.log('Theme:', theme);
+
   return (
     <div>
       <div className={`${showSwitcher ? 'show-switcher' : ''} style__switcher`}>
@@ -66,8 +72,8 @@ const Themes = () => {
         <h3 className="style__switcher-title">Style Switcher</h3>
         <div className="style__switcher-items">
             {themes.map((theme,index) => {
-                return <ThemeItem key={index} {...theme}
-                changeColor={changeColor} />
+                return <ThemeItem key={index} {...theme}  
+                changeColor={updateColor} />
             })}
         </div>
 
