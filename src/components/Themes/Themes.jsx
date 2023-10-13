@@ -53,8 +53,6 @@ const Themes = ({ onColorChange }) => {
         localStorage.setItem('theme', theme)
     }, [theme])
 
-    console.log('Color:', color);
-    console.log('Theme:', theme);
 
   return (
     <div>

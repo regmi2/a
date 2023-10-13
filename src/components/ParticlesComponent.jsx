@@ -18,8 +18,7 @@ const ParticlesComponent = ({ updatedColor }) => {
 
     const options = useMemo(() => {
         // Add debug statement here to log particleColor and linksColor
-        console.log('Particle Color:', particleColor);
-        console.log('Links Color:', linksColor);
+
         return {
             background: {
               color: "transparent", // Background color
@@ -30,7 +29,7 @@ const ParticlesComponent = ({ updatedColor }) => {
             },
             particles: {
               number: {
-                value: 80, // Number of particles
+                value: 50, // Number of particles
               },
               color: {
                 
@@ -47,7 +46,7 @@ const ParticlesComponent = ({ updatedColor }) => {
               },              
               move: {
                 enable: true,
-                speed: {min: 1, max: 3},
+                speed: {min: .5, max: 1},
               },
               links: {
                 enable: true, // Enable linking between particles
