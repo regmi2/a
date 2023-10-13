@@ -19,8 +19,6 @@ function App() {
     setParticleColor(color);
     setLinksColor(color);
   }
-  console.log('Particle Color (App):', particleColor);
-  console.log('Links Color (App):', linksColor);
 
   return (
     <BrowserRouter>
