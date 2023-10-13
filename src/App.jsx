@@ -5,7 +5,7 @@ import Themes from './components/Themes/Themes';
 import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
 import Portfolio from './pages/Portfolio/Portfolio';
-import Home from './pages/home/Home';
+import Home from './pages/Home/Home';
 import Particles from './components/ParticlesComponent';
 import { useState } from 'react';
 import { getStorageColor } from './components/Themes/Themes';
