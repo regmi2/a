@@ -23,7 +23,7 @@
 
 .about__img:hover{
   transition: 1s;
-  border: 3px solid var(--first-color);
+  border: 5px solid var(--first-color);
   scale: 1.05;
 }
 
@@ -118,6 +118,7 @@
 }
 
 .tags p {
+  transition: color 0.5s;
   margin-right: 10px;
   cursor: pointer;
   margin-bottom: 10px;
@@ -126,17 +127,19 @@
   padding: 20px;
   border-radius: 15px;
   color: var(--text-color); /* Default color for non-selected tags */
-  transition: color 0.5s; /* Transition for color change on hover */
+   /* Transition for color change on hover */
   width: 200px;
   text-align: center;
 }
 
 .tags p.selected {
+  transition: 0.3s; 
   color: var(--text-white); /* Default color for non-selected tags */
-  transition: color 0.5s; /* Transition for color change on hover */
+
 }
 
 .tags p:hover:not(.selected) {
+  transition: 0.3s;
   background-color: var(--first-color);
   color: var(--text-white); /* Color for non-selected tags on hover */
   

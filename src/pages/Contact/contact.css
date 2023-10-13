@@ -95,6 +95,11 @@
 }
 
 .contact__button-icon{
+    
     font-size: var(--h3-font-size);
     line-height: 64px;
+}
+
+.button{
+    cursor: pointer;
 }

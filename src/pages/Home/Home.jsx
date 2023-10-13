@@ -6,6 +6,7 @@ import {TypeAnimation} from 'react-type-animation'
 import './home.css'
 
 const Home = () => {
+
   return (
     <section className='home section grid'>
       <img src={Profile} alt='' className='home__img' />
