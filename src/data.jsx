@@ -108,7 +108,7 @@ import Theme10 from './assets/ThemeColors/yellow.png';
       id: 29,
       img: PR,
       title: 'Puerto Rico Video',
-      description: 'Using drones & iPhones, shot a video of our visit Cerro Mime, PR with my brother and friend. ',
+      description: 'Using drones & iPhones, shot a video of our visit to Cerro Mime, PR with my brother and friend. ',
       details: [
         {
           icon: <FiUser />,
