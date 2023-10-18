@@ -22,7 +22,6 @@ import {
   import Magnolia from './assets/PortfolioPics/magnolia.jpg'
   import Nil from './assets/PortfolioPics/Nilgiri.png'
   import PR from './assets/PortfolioPics/PR.png'
-  import PRVid from './assets/PuertoRico.mp4'
   import Dadhelo from './assets/PortfolioPics/Dadhelo.png'
   import MNFC from './assets/PortfolioPics/MNFC.jpg'
 
@@ -130,7 +129,7 @@ import Theme10 from './assets/ThemeColors/yellow.png';
           icon: <FiExternalLink />,
           title: 'Link: ',
           desc: 'Click Here',
-          link: PRVid
+          link: 'https://drive.google.com/file/d/1aamHSrS5nDFDhLzuWzHCcdYG5O0RMP1r/view?usp=share_link'
         },
       ]
     },
@@ -391,7 +390,7 @@ import Theme10 from './assets/ThemeColors/yellow.png';
     },
 
     {
-      id: 20,
+      id: 55,
       img: MilwaukeeFC,
       title: 'Milwaukee FC Logo',
       description: 'Designed and developed for the Nepali Milwaukee Football (Soccer) Club. The colors represent both the US and Nepali flag.',
