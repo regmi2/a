@@ -253,7 +253,7 @@ const Contact = () => {
           <div className="form__input-group">
             <div className={`form-group ${validationErrors.name ? 'error' : ''} form__input-div`}>
               <input type="text" placeholder='Your name' id="name"
-                name="user_name"
+                name="name"
                 value={formData.name}
                 onChange={handleInputChange}
                 className="form__control" 
@@ -261,7 +261,7 @@ const Contact = () => {
             </div>
             <div className={`form-group ${validationErrors.email ? 'error' : ''} form__input-div`}>
               <input type="email" placeholder='Your Email' id="email"
-            name="user_email"
+            name="email"
             value={formData.email}
             onChange={handleInputChange} className="form__control" />
             </div>
@@ -270,7 +270,7 @@ const Contact = () => {
             <div className="form__input-div">
               <input type="text" 
               id="subject"
-              name="user_subject"
+              name="subject"
               value={formData.subject}
               onChange={handleInputChange}
               
