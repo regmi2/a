@@ -28,6 +28,7 @@
 
 .portfolio__item:hover .portfolio__hover{
     opacity: .8;
+    border: 2px solid var(--first-color)
 }
 .portfolio__title{
     color: var(--text-white);

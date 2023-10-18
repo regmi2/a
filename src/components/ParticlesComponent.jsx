@@ -29,7 +29,7 @@ const ParticlesComponent = ({ updatedColor }) => {
             },
             particles: {
               number: {
-                value: 50, // Number of particles
+                value: 100, // Number of particles
               },
               color: {
                 

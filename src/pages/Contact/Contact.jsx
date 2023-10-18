@@ -11,9 +11,14 @@ import {
 
 import {FiSend} from 'react-icons/fi'
 import './contact.css'
-import { useState } from 'react'
+import emailjs from '@emailjs/browser';
+import { useState, useRef } from 'react'
 
 const Contact = () => {
+
+  const form = useRef();
+
+
 
   const [formData, setFormData] = useState({
     name: '',
@@ -68,22 +73,31 @@ const Contact = () => {
     if (validateForm()) {
       // Form validation passed
       // Create a JSON object from the form data
-      const submitData = {
-        name: formData.name,
-        email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-      };
+      // const submitData = {
+      //   name: formData.name,
+      //   email: formData.email,
+      //   subject: formData.subject,
+      //   message: formData.message,
+      // };
 
-      // Convert the object to a JSON string
-      const submitJSON = JSON.stringify(submitData);
-      console.log(submitJSON)
+      // // Convert the object to a JSON string
+      // const submitJSON = JSON.stringify(submitData);
+      // console.log(submitJSON)
 
-      // Push the JSON string into the array in formDataStorage.jsx
-      formDataArray.push(submitJSON);
-      console.log(formDataArray)
+      // // Push the JSON string into the array in formDataStorage.jsx
+      // formDataArray.push(submitJSON);
+      // console.log(formDataArray)
 
       // Clear the form fields
+
+      emailjs.sendForm('service_v3dd2mx', 'template_1ngvwjc', form.current, 'VWM6jKcrIUbzXXPLp')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message sent")
+      }, (error) => {
+          console.log(error.text);
+      });
+
       setFormData({
         name: '',
         email: '',
@@ -235,11 +249,11 @@ const Contact = () => {
         </div>
 
 
-        <form onSubmit={handleSubmit} className="contact__form">
+        <form ref={form} onSubmit={handleSubmit} className="contact__form">
           <div className="form__input-group">
             <div className={`form-group ${validationErrors.name ? 'error' : ''} form__input-div`}>
               <input type="text" placeholder='Your name' id="name"
-                name="name"
+                name="user_name"
                 value={formData.name}
                 onChange={handleInputChange}
                 className="form__control" 
@@ -247,7 +261,7 @@ const Contact = () => {
             </div>
             <div className={`form-group ${validationErrors.email ? 'error' : ''} form__input-div`}>
               <input type="email" placeholder='Your Email' id="email"
-            name="email"
+            name="user_email"
             value={formData.email}
             onChange={handleInputChange} className="form__control" />
             </div>
@@ -256,7 +270,7 @@ const Contact = () => {
             <div className="form__input-div">
               <input type="text" 
               id="subject"
-              name="subject"
+              name="user_subject"
               value={formData.subject}
               onChange={handleInputChange}
               
