@@ -32,10 +32,9 @@ const Home = () => {
           </h1>
 
           <p className="home__description">
-          I'm a Multimedia Specialist with 6+ years of experience 
-          crafting impactful narratives through audio, video, and visual content production. 
-           I'm passionate about working with my collaborators to deliver 
-           value that resonate with their audiences. 
+          I am a FullStack Engineer with 6+ years of programming experience. 
+            I earned my Computer Science degree from UW-Madison. 
+            My passion is to leverage my technical skills to enhance accessibility to sustainable, self-empowerment for my fellow humans. 👨🏾‍💻
          </p>
 
         <div className='home__buttons'>
