@@ -18,12 +18,12 @@
 .about__img{
    width: 100%; 
    border-radius: 50px;
-   transition: 1s;
+   transition: .2s;
 }
 
 .about__img:hover{
-  transition: 1s;
-  border: 5px solid var(--first-color);
+  transition: .2s;
+  border: 3px double var(--first-color);
   scale: 1.05;
 }
 

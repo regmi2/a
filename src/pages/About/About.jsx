@@ -146,14 +146,13 @@ const About = () => {
                 Current Occupations
                 My Goals
                 Outside Of Work  */}
-
-                I am passionate about crafting and delivering 
-                compelling and accessible narratives.
-                All of our perspectives are shaped by a tapestry 
-                of stories. When a compelling narrative meets us 
-                our perspectives, paradigms shift.
-                What I do is collaborate with my fellow humans to access
-                and leverage narratives that empower them and their people.
+I engineer fullstack software applications
+                with a strong focus on intuitive user experience that is accessible to all potential users.
+                In the front end, I thrive in crafting interactive and 
+                visually appealing user interfaces.
+                Combined with an optimized, resourceful, & secure back end, I weave together 
+                full stack applications that provide a seamless experience for users and
+                stakeholders.
                 
                 <br/>
                 <br/>
