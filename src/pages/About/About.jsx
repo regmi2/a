@@ -147,10 +147,10 @@ const About = () => {
                 My Goals
                 Outside Of Work  */}
 I engineer fullstack software applications
-                with a strong focus on intuitive user experience that is accessible to all potential users.
-                In the front end, I thrive in crafting interactive and 
+                with a strong focus on intuitive, accessible user experiences.
+                <br/>In the front end, I thrive in crafting interactive and 
                 visually appealing user interfaces.
-                Combined with an optimized, resourceful, & secure back end, I weave together 
+                <br/>Combined with an optimized, resourceful, & secure back end, I weave together 
                 full stack applications that provide a seamless experience for users and
                 stakeholders.
                 
