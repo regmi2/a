@@ -4,107 +4,110 @@ import PallavLake from "../../assets/pallav_lake.jpg"
 // import {resume} from '../../data'
 
 import './About.css'
-import { FaReact, FaNode, FaRust } from 'react-icons/fa'; 
-import {SiAdobepremierepro, SiPython,
-  SiAdobephotoshop, SiAdobeillustrator, SiReact,SiAdobelightroom,
-  SiAdobeaftereffects, SiAdobeaudition, SiHtml5,SiCss3,SiJavascript,
-  SiAdobeindesign, SiAdobecreativecloud, SiCanva} from 'react-icons/si'
-import {TbBrandVscode} from 'react-icons/tb'
+import { FaReact, FaNode, FaRust, FaJava } from 'react-icons/fa'; 
+import { SiPython,
+ SiReact,
+  SiHtml5,SiCss3,SiJavascript,
+ SiMongodb, SiExpress, SiPostman, SiC, SiHaskell, SiMysql, SiMicrosoftsqlserver, SiSqlite, SiPostgresql} from 'react-icons/si'
+import {TbBrandVscode, TbSql} from 'react-icons/tb'
 
 
   import { IconContext } from 'react-icons/lib'
 
 export const skills = [
+  
   {
     id: 1,
-    name: 'Photoshop', 
-    icon: <SiAdobephotoshop id='skill_icon' />,
-    tags:['Highlighted', 'Graphic Design', 'Photo/Video',],
-  },
+    name:'JavaScript',
+    icon: <SiJavascript id="skill_icon" />,
+    tags:['Highlighted','Languages' ]
+  },   
   {
     id: 2,
-    name: 'Illustrator',
-    icon: <SiAdobeillustrator id='skill_icon' />,
-    tags:['Graphic Design', 'Highlighted' ],
-  },
+    name:'CSS',
+    icon: <SiCss3 id="skill_icon" />,
+    tags:['Languages', ]
+  },  
   {
     id: 3,
-    name: 'Premiere Pro',
-    icon: <SiAdobepremierepro id='skill_icon' />,
-    tags:[ 'Highlighted', 'Photo/Video'],
+    name:'HTML',
+    icon: <SiHtml5 id="skill_icon" />,
+    tags:['Languages', ]
   },
+
   {
-    id: 4,
-    name: 'After Effects',
-    icon: <SiAdobeaftereffects id='skill_icon' />,
-    tags:['Photo/Video'],
+    id:4,
+    name:'Python',
+    icon: <SiPython id='skill_icon'/>,
+    tags:['Languages','Highlighted']
   },
   {
     id: 5,
-    name: 'Audition',
-    icon: <SiAdobeaudition id='skill_icon' />,
-    tags:['Photo/Video' ],
-  },
+    name:'React',
+    icon:<SiReact id='skill_icon'/>,
+    tags:['Frameworks/Tech','Highlighted']
+  } , 
   {
     id: 6,
-    name: 'InDesign',
-    icon: <SiAdobeindesign id='skill_icon' />,
-    tags:['Graphic Design', 'Highlighted'],
+    name:'NodeJS',
+    icon:<FaNode id='skill_icon'/>,
+    tags:['Highlighted','Frameworks/Tech']
   },
   {
     id: 7,
-    name: 'Adobe Creative Suite',
-    icon: <SiAdobecreativecloud id='skill_icon' />,
-    tags:['Highlighted', 'Graphic Design','Photo/Video'],
-  },
-  {
+    name:'MongoDB',
+    icon:<SiMongodb id='skill_icon' />,
+    tags:['Highlighted','Frameworks/Tech']
+
+  },{
     id: 8,
-    name:'Canva',
-    icon: <SiCanva id="skill_icon" />,
-    tags:['Graphic Design']
+    name:'ExpressJS',
+    icon:<SiExpress id='skill_icon'/>,
+    tags:['Highlighted','Frameworks/Tech'],
   },
   {
     id: 9,
     name:'VSCode',
     icon: <TbBrandVscode id="skill_icon" />,
-    tags:['Code']
+    tags:['Frameworks/Tech']
   },
   {
-    id: 10,
-    name:'HTML',
-    icon: <SiHtml5 id="skill_icon" />,
-    tags:['Code', 'Highlighted']
-  },
-  {
-    id: 11,
-    name:'CSS',
-    icon: <SiCss3 id="skill_icon" />,
-    tags:['Code', 'Highlighted']
-  },
-  {
-    id: 12,
-    name:'JavaScript',
-    icon: <SiJavascript id="skill_icon" />,
-    tags:['Code', 'Highlighted']
-  },
-  {
-    id: 13,
-    name:'React',
-    icon:<SiReact id='skill_icon'/>,
-    tags:['Code']
-  } , 
-  {
-    id: 14,
-    name:'Lightroom',
-    icon:<SiAdobelightroom id='skill_icon'/>,
-    tags:['Graphic Design', 'Photo/Video',],
+    id:10,
+    name:'Postman',
+    icon: <SiPostman id="skill_icon" />,
+    tags:['Highlighted','Frameworks/Tech']
   },
   {
     id:15,
-    name:'Python',
-    icon: <SiPython id='skill_icon'/>,
-    tags:['Code','Highlighted']
-  }
+    name:'SQL',
+    icon: <TbSql  id="skill_icon" />,
+    tags:['Highlighted','Languages']
+  },
+  {
+    id:11,
+    name:'Rust',
+    icon: <FaRust id="skill_icon" />,
+    tags:['Highlighted','Languages']
+  },
+  {
+    id:12,
+    name:'C',
+    icon: <SiC  id="skill_icon" />,
+    tags:[,'Languages']
+  },
+  {
+    id:13,
+    name:'Java',
+    icon: <FaJava id="skill_icon" />,
+    tags:['Highlighted','Languages']
+  },
+  {
+    id:14,
+    name:'Haskell',
+    icon: <SiHaskell id="skill_icon" />,
+    tags:['Languages']
+  },
+
 
 
 
@@ -280,7 +283,7 @@ export default About
 
                 For the past 2 years, I have worked extensively with React, 
                 Python (Django & Flask),
-                and Node.JS. I have also worked with No Code tools like 
+                and Node.JS. I have also worked with No Languages tools like 
                 SquareSpace, Elementor, and BettyBlocks for projects and learning. 
 
                 To see a full list of all my technical capacities, click here
