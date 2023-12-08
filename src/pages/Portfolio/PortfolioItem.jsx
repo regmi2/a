@@ -1,8 +1,8 @@
-import React from 'react'
 import {IoIosClose} from 'react-icons/io'
 import { useState } from 'react'
 
-const PortfolioItem = ({img, title, details, description}) => {
+// img, title, details, description
+const PortfolioItem = (item) => {
     const [modal, setModal] = useState(false)
 
     const toggleModal = () => {
@@ -10,9 +10,9 @@ const PortfolioItem = ({img, title, details, description}) => {
     }
   return (
     <div className="portfolio__item">
-        <img src={img} alt='' className="portfolio__img" />
+        <img src={item.img} alt='' className="portfolio__img" />
         <div className="portfolio__hover" onClick={toggleModal}>
-            <h3 className="portfolio__title">{title}</h3>
+            <h3 className="portfolio__title">{item.title}</h3>
         </div>
 
         {modal && (
@@ -20,14 +20,14 @@ const PortfolioItem = ({img, title, details, description}) => {
                     <div className="portfolio__modal-content">
                      
                         <IoIosClose className='modal__close' onClick={toggleModal}/>
-                        <h3 className="modal__title">{title}</h3>
+                        <h3 className="modal__title">{item.title}</h3>
                        
                        
 
-<img src={img} alt="" className="modal__img" />
-                        <p className='modal__description'>{description}</p>
+<img src={item.img} alt="" className="modal__img" />
+                        <p className='modal__description'>{item.description}</p>
                         <ul className="modal__list">
-  {details.map(({ icon, title, desc, link }, index) => {
+  {item.details.map(({ icon, title, desc, link }, index) => {
     return (
       <li className="modal__item" key={index}>
         <div id='icon'>
@@ -40,7 +40,7 @@ const PortfolioItem = ({img, title, details, description}) => {
         <div>
           {title === 'Link: ' ? (
             <span className="item__details">
-              <a href={link} target='_blank' id='detail_link' >{desc}</a>
+              <a href={link} target='_blank' rel='noreferrer' id='detail_link' >{desc}</a>
             </span>
           ) : (
             <span className="item__details">{desc}</span>

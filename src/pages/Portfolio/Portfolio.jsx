@@ -1,4 +1,5 @@
-import {portfolio,videos} from '../../data'
+import {portfolio} from '../../data'
+// import {videos} from '../../data'
 import PortfolioItem from './PortfolioItem'
 
 import './portfolio.css'
@@ -16,13 +17,13 @@ const Portfolio = () => {
 
       </div>
       <div className="separator"> </div>
-      <h3 className="section__subtitle">Videos</h3>
+      {/* <h3 className="section__subtitle">Videos</h3>
 
       <div className="portfolio__container container grid">
         {videos.map((video) => {
           return <PortfolioItem key={video.id} {...video} />
         })}
-        </div>
+        </div> */}
 
 
 
