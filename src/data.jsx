@@ -181,7 +181,7 @@ import Theme10 from './assets/ThemeColors/yellow.png';
           icon: <CgMediaLive />,
           title: 'Medium: ',
           desc: 'Photography',
-        },
+        }, 
         {
           icon: <FaCode />,
           title: 'Softwares: ',
